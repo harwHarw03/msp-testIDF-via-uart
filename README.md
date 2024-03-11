@@ -1,3 +1,6 @@
+TODO : 
+[ ] optimize the flush
+
 ESP-IDF template app
 ====================
 
