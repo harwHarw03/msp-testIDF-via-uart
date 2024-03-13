@@ -215,7 +215,7 @@ void app_main(void)
         rcData.aux4 = rand() % 2000;
 
         res = msp_command(200, &rcData, sizeof(RCData), true);
-        uart_wait_tx_done(UART_NUM, 20);
+        uart_wait_tx_done(UART_NUM, portMAX_DELAY);
 
         ESP_LOGI("MSP", "SendRC %d", res);
 
